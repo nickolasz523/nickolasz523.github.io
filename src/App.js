@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route, useLocation} from 'react-router-dom';
+import Home from './Components/home'
+import About from './Components/about'
+import Work from './Components/work'
+import Contact from './Components/contact'
+import NavbarHeader from './Components/navbarHeader';
+import {AnimatePresence, motion} from 'framer-motion'
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavbarHeader/>
+      <Route
+        render={({location}) => (
+          <AnimatePresence exitBeforeEnter>
+          <Switch location={location} key={location.pathname}>
+            <Route exact path='/' render={() => <Home/>}/>
+            <Route path='/about' render={() => <About/>}/>
+            <Route path='/work' render={() => <Work/>}/>
+            <Route path='/contact' render={() => <Contact/>}/>
+          </Switch>
+          </AnimatePresence>
+        )}
+        />
+      </Router>
   );
 }
 
