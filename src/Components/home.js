@@ -9,7 +9,7 @@ export default function home() {
                 <div class="home__container">
                     <h1 class="home__heading">Nickolas's <span>Portfolio</span></h1>
                     <p class="home__description">Future Full-Stack and<br></br>Software Developer</p>
-                    <button class="main__btn"><a href="#about">Explore</a></button>
+                    <button class="main__btn"><a href="/about">Explore</a></button>
                 </div>
             </div>
         </motion.div>
