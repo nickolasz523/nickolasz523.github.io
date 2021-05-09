@@ -18,7 +18,7 @@ function App() {
         render={({location}) => (
           <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
-            <Route exact path='/' render={() => <Home/>}/>
+            <Route exact path='/joemama' render={() => <Home/>}/>
             <Route path='/about' render={() => <About/>}/>
             <Route path='/work' render={() => <Work/>}/>
             <Route path='/contact' render={() => <Contact/>}/>
