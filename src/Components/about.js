@@ -1,19 +1,27 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import {PageTransition} from './constants'
+import ProgressiveImage from 'react-progressive-image'
+import Picture from "./images/IMG_5284.JPG"
+import Placeholder from "./images/placeholder1.jpg"
 
 const transistion = {duration: .6, ease:[0.6, 0.01, -0.05, 0.9]}
 
 export default function about() {
     return (
-        <motion.div exit = {PageTransition.out} animate ={PageTransition.in} initial ={PageTransition.out} variants = {PageTransition}>
+        <motion.div initial= {PageTransition.out} animate={PageTransition.in} exit= {PageTransition.out}>
             <div class="main" id="about">
 				<div class="main__container">
 					<div class="main__img--container">
-						<motion.div whileHover= {{scale: 1.1}} transition ={transistion} class="main__img--card">
-							<div class="pic-of-me">
-							</div>
-						</motion.div>
+						<div whileHover= {{scale: 1.1}} transition ={transistion} class="main__img--card">
+							<motion.div whileHover= {{scale: 1.1}} transition ={transistion} class="pic-of-me">
+								<div class ="image--container">
+								<ProgressiveImage delay={3000} src={Picture} placeholder={Placeholder}>
+  									{src => <img src={src} alt="" />}
+								</ProgressiveImage>
+								</div>
+							</motion.div>
+						</div>
 					</div>
 					<div class="main__content">			
 						<h1>WHO I AM</h1>

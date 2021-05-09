@@ -4,7 +4,7 @@ import {PageTransition} from './constants'
 
 export default function home() {
     return (
-        <motion.div exit = {PageTransition.out} animate ={PageTransition.in} initial ={PageTransition.out} variants = {PageTransition}>
+        <motion.div initial= {PageTransition.out} animate={PageTransition.in} exit= {PageTransition.out}>
             <div class="home-section" id="home">
                 <div class="home__container">
                     <h1 class="home__heading">Nickolas's <span>Portfolio</span></h1>

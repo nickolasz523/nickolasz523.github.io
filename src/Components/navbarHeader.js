@@ -7,7 +7,7 @@ export default function NavbarHeader() {
         <motion.div exit = {PageTransition.out} animate ={PageTransition.in} initial ={PageTransition.out} variants = {PageTransition}>
            <nav class="navbar">
 		<div class="navbar__container">
-			<a href="/"id="navbar__logo">NICKOLAS ZAMACHNOI</a>
+			<a href="/home"id="navbar__logo">NICKOLAS ZAMACHNOI</a>
 			<div class="navbar__toggle" id="mobile-menu">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -15,7 +15,7 @@ export default function NavbarHeader() {
 			</div>
 			<ul class="navbar__menu">
 				<li class="navbar__item">
-					<a href="/" class="navbar__links" id="home-page">Home</a>
+					<a href="/home" class="navbar__links" id="home-page">Home</a>
 				</li>
 				<li class="navbar__item">
 					<a href="/about" class="navbar__links" id="about-page">About</a>
