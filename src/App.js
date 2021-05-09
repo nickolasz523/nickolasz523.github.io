@@ -11,23 +11,19 @@ import {AnimatePresence, motion} from 'framer-motion'
 
 
 function App() {
+  const location = useLocation();
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+      <AnimatePresence exitBeforeEnter>
       <NavbarHeader/>
-      <Route
-        render={({location}) => (
-          <AnimatePresence exitBeforeEnter>
-          <Switch location={location} key={location.pathname}>
-            <Route exact path='/' render={() => <Home/>}/>
-            <Route path='/about' render={() => <About/>}/>
-            <Route path='/work' render={() => <Work/>}/>
-            <Route path='/contact' render={() => <Contact/>}/>
-          </Switch>
-          </AnimatePresence>
-        )}
-        />
-      </Router>
+        <Switch location= {location} key = {location.pathname}>
+          <Route exact path='/' component={Home}/>
+          <Route path='/about' component={About}/>
+          <Route path='/work' component={Work}/>
+          <Route path='/contact' component={Contact}/>
+        </Switch>
+      </AnimatePresence>
   );
 }
+
 
 export default App;
