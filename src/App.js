@@ -18,10 +18,10 @@ function App() {
         render={({location}) => (
           <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
-            <Route exact path='/joemama' render={() => <Home/>}/>
-            <Route path='/joemama/about' render={() => <About/>}/>
-            <Route path='/joemama/work' render={() => <Work/>}/>
-            <Route path='/joemama/contact' render={() => <Contact/>}/>
+            <Route exact path='/' render={() => <Home/>}/>
+            <Route path='/about' render={() => <About/>}/>
+            <Route path='/work' render={() => <Work/>}/>
+            <Route path='/contact' render={() => <Contact/>}/>
           </Switch>
           </AnimatePresence>
         )}
