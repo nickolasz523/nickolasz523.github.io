@@ -14,7 +14,7 @@ function App() {
   const location = useLocation();
   const imageDetails = {
     height: 875,
-	  width: 561.5,
+	  width: 561.6,
   };
   return (
       <AnimatePresence exitBeforeEnter>
