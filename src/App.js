@@ -12,7 +12,7 @@ import {AnimatePresence, motion} from 'framer-motion'
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <NavbarHeader/>
       <Route
         render={({location}) => (
