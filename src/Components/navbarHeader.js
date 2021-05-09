@@ -15,16 +15,16 @@ export default function NavbarHeader() {
 			</div>
 			<ul class="navbar__menu">
 				<li class="navbar__item">
-					<a href="/" class="navbar__links" id="home-page">Home</a>
+					<a href="/joemama" class="navbar__links" id="home-page">Home</a>
 				</li>
 				<li class="navbar__item">
-					<a href="/about" class="navbar__links" id="about-page">About</a>
+					<a href="/joemama/about" class="navbar__links" id="about-page">About</a>
 				</li>
 				<li class="navbar__item">
-					<a href="/work" class="navbar__links" id="work-page">Work</a>
+					<a href="/joemama/work" class="navbar__links" id="work-page">Work</a>
 				</li>
 				<li class="navbar__btn">
-					<a href="/contact" class="button" id="contact">Contact</a>
+					<a href="/joemama/contact" class="button" id="contact">Contact</a>
 				</li>
 			</ul>
 		</div>
