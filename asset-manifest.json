@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/joemama/static/css/main.fc8c2580.chunk.css",
-    "main.js": "/joemama/static/js/main.992d81ba.chunk.js",
-    "main.js.map": "/joemama/static/js/main.992d81ba.chunk.js.map",
+    "main.js": "/joemama/static/js/main.dbb2cb42.chunk.js",
+    "main.js.map": "/joemama/static/js/main.dbb2cb42.chunk.js.map",
     "runtime-main.js": "/joemama/static/js/runtime-main.f0015478.js",
     "runtime-main.js.map": "/joemama/static/js/runtime-main.f0015478.js.map",
     "static/js/2.148b799a.chunk.js": "/joemama/static/js/2.148b799a.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.f0015478.js",
     "static/js/2.148b799a.chunk.js",
     "static/css/main.fc8c2580.chunk.css",
-    "static/js/main.992d81ba.chunk.js"
+    "static/js/main.dbb2cb42.chunk.js"
   ]
 }
