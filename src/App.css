@@ -139,13 +139,7 @@
 		padding-left: 25px;
 	}
 
-	.navbar__toggle .bar {
-		width: 25px;
-		height: 3px;
-		margin: 5px auto;
-		transition: all 0.3 ease-in-out;
-		background: #fff;
-	}
+
 	.navbar__item {
     	width: 100%;
  	 }
@@ -398,15 +392,15 @@
 	box-shadow:         inset 0 0 10px #000000;
 	zoom: 1;
 	position: absolute;
+		overflow: hidden;
 
 }
 
 .image--container {
+	height: 875px;
 	-webkit-box-shadow: inset 0 0 10px #000;    
 	  -moz-box-shadow: inset 0 0 10px #000;
 	  box-shadow: inset 0 0 10px #000;
-	  position: relative;
-	  height: 875px;
 
 }
 .image--container img{
@@ -438,6 +432,7 @@
 	.main__img--container{
 		display: flex;
 		justify-content: center;
+		z-index: inherit;
 	}
 	.main__img--card{
 		zoom: 0.7;

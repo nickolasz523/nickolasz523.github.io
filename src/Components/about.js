@@ -14,13 +14,13 @@ export default function about() {
 				<div class="main__container">
 					<div class="main__img--container">
 						<div whileHover= {{scale: 1.1}} transition ={transistion} class="main__img--card">
-							<motion.div whileHover= {{scale: 1.1}} transition ={transistion} class="pic-of-me">
-								<div class ="image--container">
+							<div class="pic-of-me">
+								<motion.div whileHover= {{scale: 1.1}} transition ={transistion}  class ="image--container">
 								<ProgressiveImage delay={3000} src={Picture} placeholder={Placeholder}>
   									{src => <img src={src} alt="" />}
 								</ProgressiveImage>
-								</div>
-							</motion.div>
+								</motion.div>
+							</div>
 						</div>
 					</div>
 					<div class="main__content">			
