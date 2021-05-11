@@ -6,6 +6,8 @@ import Work from './Components/work'
 import Contact from './Components/contact'
 import NavbarHeader from './Components/navbarHeader';
 import {AnimatePresence, motion} from 'framer-motion'
+import Particles from 'react-particles-js'
+import ParticleBackground from './Components/ParticleBackground'
 
 
 

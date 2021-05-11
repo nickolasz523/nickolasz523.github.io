@@ -14,7 +14,7 @@ export default function NavbarHeader() {
 				<div class="navbar__container">
 					<a href="/home"id="navbar__logo">NICKOLAS ZAMACHNOI</a>
 					<div class="navbar__toggle" id="mobile-menu">
-						<span>
+						<span id="thing">
 							<FontAwesomeIcon icon={faBars}
 							 onClick={() => setShowMenu(!showMenu)}/>
 						</span>
