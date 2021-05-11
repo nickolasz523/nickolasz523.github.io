@@ -1,17 +1,19 @@
 import React, {useState} from 'react'
 import {AnimatePresence, motion} from 'framer-motion'
-import {PageTransition} from './constants'
+import {PageTransition, activeStyle} from './constants'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 
 export default function NavbarHeader() {
+	const [showMenu, setShowMenu] = useState(false)
     return (
         <motion.div exit = {PageTransition.out} animate ={PageTransition.in} initial ={PageTransition.out} variants = {PageTransition}>
-           <nav class="navbar">
+        	<nav class="navbar">
 				<div class="navbar__container">
 					<a href="/home"id="navbar__logo">NICKOLAS ZAMACHNOI</a>
 					<div class="navbar__toggle" id="mobile-menu">
-						<span className="text-xl">
+						<span>
+							<FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)}/>
 						</span>
 					</div>
 					<ul class="navbar__menu">

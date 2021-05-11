@@ -102,14 +102,21 @@
 	color: #000;
 	transition: all 0.3s ease;
 }
+.navbar__toggle span{
+	position: absolute;
+	top: -1000px;
+}
 
 @media screen and (max-width: 1020px){
+	.navbar{
+		display:flex;
+	}
 	.navbar__container {
     	display: flex;
+		flex-direction: row;
     	justify-content: space-between;
     	height: 80px;
     	z-index: 1;
-   	 	width: 100%;
     	max-width: 1300px;
    		padding: 0;
   }
@@ -123,9 +130,16 @@
     	opacity: 1;
     	transition: all 0.5s ease;
     	z-index: -1;
+		/* background: #131313;
+		top: 100%;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 99;
+		height: 60vh;
+		font-size: 1.6rem; */
 	}
 
-	.navbar__menu.active{
+	.navbar__menu .active{
 		background: #131313;
     	top: 100%;
     	opacity: 1;
@@ -137,6 +151,7 @@
 
 	#navbar__logo{
 		padding-left: 25px;
+		padding-right: 50px
 	}
 
 
@@ -169,10 +184,16 @@
 		right: 5%;
 		transform: translate(5%, 21.5%);
 	}
-
-	.navbar__toggle .bar{
+	
+	.navbar__toggle span{
 		display: block;
+		position: relative;
+		float: left;
 		cursor: pointer;
+		padding-top: 6px;
+		transform: scale(1.5);
+		top: auto;
+		transition: all 0.3s ease;
 	}
 
 	#mobile-menu.is-active .bar:nth-child(2){
@@ -294,6 +315,7 @@
 	-moz-text-fill-color: transparent;
 	text-transform: uppercase;
 	margin-bottom: 16px;
+	font-size: 20px;
 }
 
 .main__content ul{
@@ -301,23 +323,23 @@
 	top: 50px;
 	list-style-position: inside;
 	display: inline-block;
-	font-size: 18px;
+
 
 }
 
 .main__content p{
 	margin-top: 12px;
-	font-size: 20px;
+	font-size: 14px;
 	color: #fff;
 }
 
 .main__btn{
-	font-size: 20px;
+	font-size: 16px;
 	background: #833ab4;
 	background: -webkit-linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
 	background: -moz-linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
 	background: linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
-	padding: 20px 60px;
+	padding: 15px 45px;
 	border: none;
 	border-radius: 4px;
 	margin-top: 24px;
@@ -332,6 +354,12 @@
 	z-index: 2;
 	color: #fff;
 	text-decoration: none;
+		padding: 1em;
+		padding-left: 3em;
+		padding-right: 3em;     
+		   margin: -1em;
+		margin-left: -3em;
+		margin-right: -3em;
 }
 
 .main__btn:after{
@@ -378,8 +406,8 @@
 	color: #fff;
 	background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 	z-index: -3;
-	-moz-transform: scale(0.8);
-	zoom: 0.8;
+	-moz-transform: scale(0.66);
+	zoom: 0.66;
 
 }
 
