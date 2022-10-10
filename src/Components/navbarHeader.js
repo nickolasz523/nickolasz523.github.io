@@ -25,7 +25,7 @@ export default function NavbarHeader() {
 							<a href="/home" class="navbar__links" id="home-page">Home</a>
 						</li>
 						<li class="navbar__item">
-							<a href="/about" class="navbar__links" id="about-page">About</a>
+							 cl<a href="/about" class="navbar__links" id="about-page">About</a>
 						</li>
 						<li class="navbar__item">
 							<a href="/work" class="navbar__links" id="work-page">Work</a>
