@@ -1,4 +1,5 @@
 import React from 'react'
+import javafx from './images/Javafx.PNG'
 import {AnimatePresence, motion} from 'framer-motion'
 import {PageTransition} from './constants'
 
@@ -9,10 +10,10 @@ export default function work() {
 		<h1>My Work</h1>
 		<div class="work__wrapper">
 			<div class="work__photography">
-				<h2>Photography</h2>
+				<h2>Java</h2>
 				<br></br>
 				<div class="photos">
-					<img src="/images/turtle.jpg" alt="" id="turtle"></img>
+					<img src={javafx} alt="" id="javafx"></img>
 					<img src="/images/dog.png" alt="" id="dog"></img>
 				</div>
 			</div>

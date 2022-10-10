@@ -28,7 +28,9 @@
   margin: 0 auto;
   padding: 0 50px;
 }
-
+#javafx{
+	height: 100%;
+}
 #navbar__logo{
 	background-color: #ff8177;
 	background-image: linear-gradient(to top, #C9D6FF, #E2E2E2);
@@ -551,18 +553,16 @@
 }
 
 .photos{
+	max-height: 20%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
 	padding: 10px;
-	/* background: #fff; */
 	text-align: center;
 }
 
 .photos img{
-	width: 500px;
-	margin: 100px;
+	max-width: 60%;
 }
 
 .videos{
@@ -583,8 +583,7 @@
 	}
 
 	.photos img{
-		width: 300px;
-		margin: 50px;
+		max-width: 100%;
 	}
 	.photos{
 		width: 100%;
